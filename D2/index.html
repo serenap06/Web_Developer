@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form e input fields</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<h1>Interazioni con l'utente</h1>
-<form onsubmit="alert('form inviato')">
-<div>
-    <input type="text" placeholder="Inserisci il tuo nome"> 
-</div>
-<div>
-    <input type="email" placeholder="Inserisci il tuo indirizzo email"> 
-</div>
-<div>
-    <input type="password" placeholder="Inserisci la tua password"> 
-</div>
-<div>
-    <input type="datetime-local" placeholder="Inserisci la data e l'ora"> 
-</div>
-<div>
-    <input type="range"/>
-</div>
-<button type="submit">Invia form</button>
-</form>
-<button onclick="alert('come stai?')">CIAO</button>
 <body>
-    
+    <h1>Registrati</h1>
+    <form onsubmit="alert('Registrazione inviata con successo!'); return false;">
+        <div>
+            <input type="text" placeholder="Nome"> 
+        </div>
+        <div>
+            <input type="text" placeholder="Cognome"> 
+        </div>
+        <div>
+            <input type="email" placeholder="Email"> 
+        </div>
+        <div>
+            <input type="password" placeholder="Password"> 
+        </div>
+        <div>
+            <input type="date" placeholder="Inserisci la tua data di nascita"> 
+        </div>
+        <div>
+            <input type="number" placeholder="Inserisci qui il tuo numero di telefono"/>
+        </div>
+         <div class="generi_musicali">
+            <h4>Quali sono i tuoi generi musicali preferiti?</h6>
+            <input type="checkbox" id="pop" />
+            <label for="pop">Pop</label>
+            <input type="checkbox" id="rock" />
+            <label for="rock">Rock</label>
+            <input type="checkbox" id="Jazz" />
+            <label for="Jazz">Jazz</label>
+            <input type="checkbox" id="RnB" />
+            <label for="RnB">R&B</label>
+        </div>
+         <div class="accetto">
+            <input type="radio" id="accetto" />
+            <label for="accetto">Accetto i termini e le condizioni</label>
+
+        </div>
+        <button type="submit">Invia registrazione</button>
+        </form>
 </body>
 </html>
